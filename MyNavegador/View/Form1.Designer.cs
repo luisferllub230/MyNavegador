@@ -32,17 +32,17 @@
             this.menu = new System.Windows.Forms.ToolStrip();
             this.rButton = new System.Windows.Forms.ToolStripButton();
             this.aButton = new System.Windows.Forms.ToolStripButton();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.recargarButton = new System.Windows.Forms.ToolStripButton();
+            this.homeButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.txtUrl = new System.Windows.Forms.ToolStripTextBox();
             this.buscarButton = new System.Windows.Forms.ToolStripButton();
-            this.homeButton = new System.Windows.Forms.ToolStripButton();
-            this.favoritosButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.favoritosCB = new System.Windows.Forms.ToolStripComboBox();
+            this.favoritosButton = new System.Windows.Forms.ToolStripButton();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,17 +90,6 @@
             this.aButton.Text = "toolStripButton1";
             this.aButton.Click += new System.EventHandler(this.aButton_Click);
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(0, 38);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(924, 412);
-            this.webBrowser1.TabIndex = 1;
-            // 
             // recargarButton
             // 
             this.recargarButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -110,6 +99,16 @@
             this.recargarButton.Size = new System.Drawing.Size(23, 22);
             this.recargarButton.Text = "toolStripButton1";
             this.recargarButton.Click += new System.EventHandler(this.recargarButton_Click);
+            // 
+            // homeButton
+            // 
+            this.homeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.homeButton.Image = ((System.Drawing.Image)(resources.GetObject("homeButton.Image")));
+            this.homeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(23, 22);
+            this.homeButton.Text = "toolStripButton1";
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // toolStripSeparator1
             // 
@@ -137,15 +136,16 @@
             this.buscarButton.Text = "toolStripButton1";
             this.buscarButton.Click += new System.EventHandler(this.buscarButton_Click);
             // 
-            // homeButton
+            // toolStripSeparator3
             // 
-            this.homeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.homeButton.Image = ((System.Drawing.Image)(resources.GetObject("homeButton.Image")));
-            this.homeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(23, 22);
-            this.homeButton.Text = "toolStripButton1";
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // favoritosCB
+            // 
+            this.favoritosCB.Name = "favoritosCB";
+            this.favoritosCB.Size = new System.Drawing.Size(121, 25);
+            this.favoritosCB.SelectedIndexChanged += new System.EventHandler(this.favoritosCB_SelectedIndexChanged);
             // 
             // favoritosButton
             // 
@@ -157,16 +157,16 @@
             this.favoritosButton.Text = "toolStripButton1";
             this.favoritosButton.Click += new System.EventHandler(this.favoritosButton_Click);
             // 
-            // toolStripSeparator3
+            // webBrowser1
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // favoritosCB
-            // 
-            this.favoritosCB.Name = "favoritosCB";
-            this.favoritosCB.Size = new System.Drawing.Size(121, 25);
-            this.favoritosCB.SelectedIndexChanged += new System.EventHandler(this.favoritosCB_SelectedIndexChanged);
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBrowser1.Location = new System.Drawing.Point(0, 38);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(924, 412);
+            this.webBrowser1.TabIndex = 1;
             // 
             // MyNavegador
             // 
